@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>School Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f7f7fb;
+    }
+
+    .sidebar {
+      width: 250px;
+      background: linear-gradient(to bottom, #4CAF50, #66BB6A);
+      color: white;
+      height: 100vh;
+      padding: 20px 10px;
+      position: fixed;
+    }
+
+    .sidebar h2 {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 10px 15px;
+      margin: 10px 0;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .sidebar a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .main-content {
+      margin-left: 270px;
+      padding: 30px;
+    }
+
+    .main-content h1 {
+      color: #4CAF50;
+      margin-bottom: 40px;
+      font-size: 28px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 300px);
+      grid-gap: 30px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .card h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .card p {
+      font-size: 24px;
+      color: #4CAF50;
+      font-weight: bold;
+    }
+
+    @media screen and (max-width: 768px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .main-content {
+        margin-left: 0;
+        padding: 20px;
+      }
+
+      .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>School Dashboard</h2>
+    <a href="#">Dashboard</a>
+    <a href="#">Students</a>
+    <a href="#">Teachers</a>
+    <a href="#">Classes</a>
+    <a href="#">Exams</a>
+    <a href="#">Library</a>
+    <a href="#">Settings</a>
+  </div>
+
+  <div class="main-content">
+    <center><h1>Welcome to the School Dashboard</h1></center>
+    <div class="cards">
+      <div class="card">
+        <h2>Total Students</h2>
+        <p>500</p>
+      </div>
+      <div class="card">
+        <h2>Total Teachers</h2>
+        <p>50</p>
+      </div>
+      <div class="card">
+        <h2>Classes</h2>
+        <p>20</p>
+      </div>
+      <div class="card">
+        <h2>Upcoming Exams</h2>
+        <p>5</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
